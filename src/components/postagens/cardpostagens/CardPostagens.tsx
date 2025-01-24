@@ -11,7 +11,11 @@ function CardPostagem({ postagem }: CardPostagensProps) {
             flex flex-col rounded overflow-hidden justify-between'>
                 
             <div>
+<<<<<<< HEAD
                 <div className="flex w-full text-white bg-red-950 py-2 px-4 items-center gap-4">
+=======
+                <div className="flex w-full bg-indigo-400 py-2 px-4 items-center gap-4">
+>>>>>>> 6829c0016b5c43b9712f994416142b0003a6d661
                     <img
                         src={postagem.usuario?.foto}
                         className='h-12 rounded-full'
