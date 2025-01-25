@@ -12,11 +12,14 @@ import DeletarTema from './components/temas/deletartema/DeletarTemas'
 import ListaPostagens from './components/postagens/listapostagens/ListaPostagens'
 import FormPostagem from './components/postagens/formpostagem/FormPostagem'
 import DeletarPostagem from './components/postagens/deletarpostagens/DeletarPostagem'
+import Perfil from './pages/perfil/Perfil'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
   return (
     <>
       <AuthProvider>
+      <ToastContainer />
         <BrowserRouter>
           <Navbar />
           <div className="min-h-[80vh]">
@@ -33,6 +36,7 @@ function App() {
               <Route path="/cadastrarpostagem" element={<FormPostagem />} />
               <Route path="/editarpostagem/:id" element={<FormPostagem />} />
               <Route path="/deletarpostagem/:id" element={<DeletarPostagem />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />

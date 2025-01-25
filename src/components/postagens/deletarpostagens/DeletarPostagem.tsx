@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState, useContext, useEffect } from "react"
 import { useNavigate, useParams } from "react-router-dom"
 import { AuthContext } from "../../../contexts/AuthContext"
@@ -60,7 +59,7 @@ function DeletarPostagem() {
         } catch (error: any) {
             if (error.toString().includes('403')) {
                 handleLogout()
-            }else {
+            } else {
                 alert('Erro ao deletar a postagem.')
             }
         }
@@ -72,10 +71,7 @@ function DeletarPostagem() {
     function retornar() {
         navigate("/postagens")
     }
-    
-=======
-function DeletarPostagem() {
->>>>>>> 6829c0016b5c43b9712f994416142b0003a6d661
+
     return (
         <div className='container w-1/3 mx-auto'>
             <h1 className='text-4xl text-center my-4'>Deletar Postagem</h1>
@@ -90,7 +86,6 @@ function DeletarPostagem() {
                     Postagem
                 </header>
                 <div className="p-4">
-<<<<<<< HEAD
                     <p className='text-xl h-full'>{postagem.titulo}</p>
                     <p>{postagem.texto}</p>
                 </div>
@@ -98,36 +93,23 @@ function DeletarPostagem() {
                     <button 
                         className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2'
                         onClick={retornar}>
-=======
-                    <p className='text-xl h-full'>Título da Postagem</p>
-                    <p>Texto da Postagem</p>
-                </div>
-                <div className="flex">
-                    <button 
-                        className='text-slate-100 bg-red-400 hover:bg-red-600 w-full py-2'>
->>>>>>> 6829c0016b5c43b9712f994416142b0003a6d661
                         Não
                     </button>
                     <button 
-                        className='w-full text-slate-100 bg-indigo-400 
-<<<<<<< HEAD
-                        hover:bg-indigo-600 flex items-center justify-center'
+                        className='w-full text-slate-100 bg-red-400
+                        hover:bg-red-600 flex items-center justify-center'
                         onClick={deletarPostagem}>
                         
-                        {isLoading ?
+                        {isLoading ? 
                             <RotatingLines
                                 strokeColor="white"
                                 strokeWidth="5"
                                 animationDuration="0.75"
                                 width="24"
                                 visible={true}
-                            /> :
+                            /> : 
                             <span>Sim</span>
                         }
-=======
-                        hover:bg-indigo-600 flex items-center justify-center'>
-                        Sim
->>>>>>> 6829c0016b5c43b9712f994416142b0003a6d661
                     </button>
                 </div>
             </div>
