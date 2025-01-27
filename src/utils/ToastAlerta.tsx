@@ -43,4 +43,4 @@ export function ToastAlerta(mensagem: string, tipo: string) {
             });
             break;
     }
-}
+}  
