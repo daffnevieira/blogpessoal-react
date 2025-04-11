@@ -30,7 +30,7 @@ function ListaTemas() {
 
     useEffect(() => {
         if (token === '') {
-            ToastAlerta('PVocê precisa estra logado', 'info')
+            ToastAlerta('Você precisa estra logado', 'info')
             navigate('/')
         }
     }, [token])
